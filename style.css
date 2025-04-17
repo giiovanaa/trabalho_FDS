@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+
+:root {
+    --main-font: "Courier New", Courier, monospace;
+    --fun-font: "Bungee Shade", cursive;
+    --baby-pink: #ffdbdc;
+    --brown: #3a311e;
+}
+
+
+.scrollBar {
+    overflow-y: scroll !important;
+}
+.scrollBar::-webkit-scrollbar {
+    display: none !important;
+}
+
+
+body {
+    font-family: var(--main-font);
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+    background-color: var(--baby-pink);
+    color: var(--brown)
+}
+
+header{
+    height: 100vh;
+	width: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.40) 100%, transparent), 
+    url(./imgs/vbGiovana.png);
+    background-size: cover; 
+    background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+h1{
+    font-family: var(--fun-font) ;
+    color: #fff;
+	font-size: 3rem;
+	margin-bottom: 0.5rem;
+	letter-spacing: 1px;
+}
+
+#aboutMe, #hobbiesList, #countriesTable {
+    width: 90%;
+    height: 80vh;
+    padding: 10px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    #aboutMe, #countriesTable {
+        flex-direction: column; 
+    }
+    #countriesTable{
+       gap: 10px;    }
+
+h2{
+    font-size: 1.6rem;
+	font-style: italic;
+}
+p, ul{
+    font-size: 1.2rem;
+	margin-bottom: 1rem;
+    text-align: justify;
+}
+
+#hobbyImage{
+    width: 25%;
+    height: auto;
+    border-radius: 25%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+    .countryImg{
+        width: 25%;
+        max-width: 350px;
+        height: auto;
+        border-radius: 25%;
+        border: 2px rgba(0, 0, 0, 0.2) solid;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .container{
+        padding: 10%;
+    }
+    
+#sk {
+    background-image: url(./imgs/southkorea.jpg);
+    background-position: center;
+}
+    #eng{
+        background-image: url(./imgs/england.jpg);
+        background-position: center;
+    }
+        #aus{
+            background-image: url(./imgs/australia.jpg);
+            background-position: center;
+        }
+    td {
+        font-weight: bold;
+        text-align: center;
+    }
+
+
+a{
+    font-weight: bold;
+	text-decoration: underline dotted;
+	color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+    #importance {
+        flex-direction: column; 
+    }
+
+    img {
+        width: 50%;
+    }
+}
