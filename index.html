@@ -3,64 +3,94 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./assets/style.css">
         <title>Hobbies | Giovana Elisa Blank</title>
     </head>
+
     <body class="scrollBar">
         <header>
             <h1>Giovana Elisa Blank</h1>
         </header>
 
         <main>
-
+            <!--*SOBRE MIM-->
             <section id="aboutMe">
-                <h2>Quem é Giovana?</h2>
-                <p>texto texto texto</p>
+                <div class="textContainer">
+                    <h2>Oiê!</h2>
+                    <p>Meu nome é Giovana, tenho 18 anos e sou Santa Cruz do Sul, Rio Grande do Sul.<br>
+                        Sou estudante de Administração e de Análise e Desenvolvimento de Sistemas. Desde
+                        pequena, sou muito curiosa e tenho um grande apreço por tecnologia e inovação.
+                        Sempre gostei de realizar pesquisas, desenvolver projetos e pensar soluções
+                        diferentes para problemas comuns.</p>
+
+                    <p>Adoro ocupar meu tempo livre, e os intervalos entre um compromisso e outro,
+                        com atividades que contribuam ao meu bem-estar físico e mental; também gosto de
+                        aprender coisas novas e de me distrair com uma boa risada.
+                        <br>E por isso, o
+                        <a href="https://thenewscc.com.br/evento">The News</a>
+                        é uma das minhas formas preferidas de passar o tempo: me mantenho informada
+                        sobre o que acontece no mundo, e ainda me divirto com a narrativa descontraída.
+                    </p>
+
+                    <button onclick="mensagem()">Clique para ver uma mensagem!</button>
+                </div>
+                <div id="messageBox"></div>
             </section>
 
+            <!--*HOBBIES-->
             <section id="hobbiesList">
-                <div class="container">
-                    <h2>Minhas atividades favoritas</h2>
-                    <p>Gosto de ocupar meu tempo livre, e os intervalos entre um compromisso e
-                        outro, com atividades que contribuam ao meu bem-estar físico e mental; também
-                        gosto de aprender coisas novas e de me distrair com uma boa risada.</p>
-                </p>
-                <ul>
-                    <li>Leitura - meus gêneros favoritos são romance, comédia e suspense; amo ler enquanto bebo chá gelado ou um cafézinho.</li>
-                    <li>Corrida - gosto de correr ao pôr do sol, e de participar de desafios de rua.</li>
-                    <li>Doramas - adoro aprender sobre novas culturas, e as séries coreanas são bem
-                        produzidas, divertidas e discutem temas reflexivos e importantes.</li>
-                </ul>
-            </div>
-            <img
-                src="hobby.jpg"
-                alt="Kindle e chá gelado de hisbísco"
-                id="hobbyImage">
-        </section>
+                <img
+                    src="./assets/imgs/hobby.jpg"
+                    alt="Kindle e chá gelado de hisbísco"
+                    id="hobbyImage">
 
-        <section id="countriesTable">
-            <h2>Países que quero visitar</h2>
-            <table border="1" cellspacing="0" cellpadding="5">
-                <tr>
-                    <th>País</th>
-                    <th>Imagem</th>
-                </tr>
-                <tr>
-                    <td>Coreia do Sul</td>
-                    <td id="sk"><img src="southkorea.jpg" alt="Coreia do Sul" class="countryImg"></td>
-                </tr>
-                <tr>
-                    <td>Inglaterra</td>
-                    <td id="eng"><img src="england.jpg" alt="Inglaterra" class="countryImg"></td>
-                </tr>
-                <tr>
-                    <td>Australia</td>
-                    <td id="aus"><img src="australia.jpg" alt="Australia" class="countryImg"></td>
-                </tr>
+                <div class="textContainer">
+                    <h2>Minhas atividades favoritas</h2>
+                    <ul>
+                        <li>
+                            <strong>Leitura</strong>
+                            - meus gêneros favoritos são romance, comédia e suspense; amo ler enquanto bebo
+                            chá gelado ou um cafézinho.</li>
+                        <li>
+                            <strong>Corrida</strong>
+                            - gosto de correr ao pôr do sol, e de participar de desafios de rua.</li>
+                        <li>
+                            <strong>Doramas</strong>
+                            - adoro aprender sobre novas culturas, e as séries coreanas são bem produzidas,
+                            divertidas e discutem temas reflexivos e importantes.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--*PAÍSES-->
+            <section id="countriesTable">
+                <h2>Países que quero visitar</h2>
+
+                <table border="1" cellspacing="3" cellpadding="3">
+                    <tr>
+                        <th>País</th>
+                        <th>Imagem</th>
+                    </tr>
+                    <tr>
+                        <td>Coreia do Sul</td>
+                        <td id="sk"><img src="./assets/imgs/southkorea.jpg" alt="Coreia do Sul" class="countryImg"></td>
+                    </tr>
+                    <tr>
+                        <td>Inglaterra</td>
+                        <td id="eng"><img src="./assets/imgs/england.jpg" alt="Inglaterra" class="countryImg"></td>
+                    </tr>
+                    <tr>
+                        <td>Australia</td>
+                        <td id="aus"><img src="./assets/imgs/australia.jpg" alt="Australia" class="countryImg"></td>
+                    </tr>
+                </table>
             </section>
 
         </main>
-        <footer></footer>
-        <script src="script.js"></script>
+
+        <footer>Este site foi desenvolvido por
+            <a href="https://github.com/giiovanaa">Giovana Blank</a>
+        </footer>
+        <script src="./assets/script.js"></script>
     </body>
 </html>
